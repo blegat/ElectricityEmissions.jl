@@ -14,7 +14,7 @@ The latest development version of `ElectricityEmissions.jl` can be added via:
 ## Basic Use
 To use `ElectricityEmissions.jl`, simply load a test case in MATPOWER format, assign emissions intensity values to all generators, and calculate nodal carbon intensity values. Optionally, it is then possible to visualize these nodal intensity values.
 
-```
+```julia
 using ElectricityEmissions, PowerModels, HiGHS
 
 case = PowerModels.parse_file("./test_cases/case30pwl.m")
